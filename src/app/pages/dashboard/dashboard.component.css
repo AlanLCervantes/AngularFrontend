@@ -1,0 +1,55 @@
+.container {
+  padding: 30px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.navbar {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.navbar-dark {
+  background-color: #007bff;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: background-color #007bfg;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.bienvenida {
+  margin-top: 50px;
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.bienvenida h1 {
+  color: #333;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.bienvenida p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.bienvenida a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}

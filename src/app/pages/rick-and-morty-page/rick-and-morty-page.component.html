@@ -1,0 +1,16 @@
+<div *ngIf="characters.length > 0; else noData">
+  <ul>
+    <li *ngFor="let character of characters">
+      <img [src]="character.image" [alt]="character.name" width="50">
+      <strong>{{ character.name }}</strong>
+      <p>
+        Estado: {{ character.status }} | Especie: {{ character.species }} | Género: {{ character.gender }}
+      </p>
+      <p>Ubicación actual: {{ character.location.name }}</p>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noData>
+  <p>No hay personajes disponibles. Presiona el botón para cargarlos.</p>
+</ng-template>

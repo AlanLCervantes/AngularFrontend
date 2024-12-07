@@ -1,0 +1,12 @@
+<div *ngIf="episodes.length > 0; else noData">
+  <h1>Episodes</h1>
+  <ul>
+    <li *ngFor="let episode of episodes">
+      <h3>{{ episode.name }} ({{ episode.episode }})</h3>
+      <p>Aired: {{ episode.air_date }}</p>
+    </li>
+  </ul>
+</div>
+<ng-template #noData>
+  <p>No episodes found.</p>
+</ng-template>

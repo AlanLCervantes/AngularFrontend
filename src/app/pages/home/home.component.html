@@ -1,12 +1,12 @@
-<div class="card">
-    <div class="card-header">
-        <img [src]="image" alt="" class="image">
-    </div>
-    <div class="card-body">
-        <h2 class="title">{{title}}</h2>
-        <p class="info">{{info}}<p>
-    </div>
-    <div class="card-footer">
-    	<button class="btn" (click)="onClick()">{{text_btn}}</button>
+<div class="container">
+    <div class="box">
+       <h3>Taller Angular</h3>
+       <label for="email">Email</label>
+       <input type="email" placeholder="alan@abueno.com" name="email" id="email" [(ngModel)]="email">
+       <label for="password">Password</label>
+       <input type="password" placeholder="contraseña" name="password" id="password" [(ngModel)]="password">
+       <div class="controllers">
+           <button (click)="login(email, password)">Login</button>
+       </div>
     </div>
 </div>
